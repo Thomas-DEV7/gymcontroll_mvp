@@ -59,15 +59,9 @@ $trainings = getUserTrainings($_SESSION['user']['id']);
 
 <body>
 
-    <nav class="navbar navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">GymControll</a>
-            <div>
-                <span class="me-3">Olá, <?= htmlspecialchars($_SESSION['user']['name']) ?></span>
-                <a href="../controllers/AuthController.php?action=logout" class="btn btn-sm btn-logout">Sair</a>
-            </div>
-        </div>
-    </nav>
+    <?php
+    include '../includes/header.php';
+    ?>
 
     <div class="container py-4">
 
