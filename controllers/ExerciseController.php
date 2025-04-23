@@ -21,6 +21,7 @@ function getExercisesByTraining($trainingId) {
 
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+
 function getExerciseById($exerciseId) {
     $pdo = getDatabaseConnection();
 
@@ -37,7 +38,6 @@ function getExerciseById($exerciseId) {
 
     return $exercise;
 }
-
 
 function createExercise() {
     if (!isset($_SESSION['user'])) {

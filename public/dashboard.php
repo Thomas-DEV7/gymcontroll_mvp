@@ -36,6 +36,7 @@ $trainings = getUserTrainings($_SESSION['user']['id']);
             background-color: #1f1f1f;
             border-radius: 12px;
             margin-bottom: 20px;
+            color: #ffffff;
         }
 
         .btn-create {
